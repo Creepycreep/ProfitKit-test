@@ -1,0 +1,123 @@
+@media ( max-width: 1440px )
+  .main
+    padding-bottom: 50px
+  .button
+    &-prev,
+    &-next
+      top: unset
+      bottom: -50px
+    &-prev
+      left: 16px
+    &-next
+      right: 36px
+
+@media ( max-width: 1384px )
+  .main
+    .carousel
+      &-card
+        height: auto
+        max-height: 496px
+    .card
+      &-cart
+        &__btn
+          padding: 17px 20.5px 17px 50.5px
+          font-size: 12px
+      &-menu
+        margin: 0 20px 20px 20px
+      &-amount
+        width: 70px
+        &__amount
+          padding: 17px 5px
+          font-size: 12px
+        &__btn
+          font-size: 14px
+
+@media ( max-width: 1214px )
+  .main
+    padding-bottom: 30px
+    .card
+      &-cart
+        &__btn
+          padding: 17px 10.5px 17px 40.5px
+          font-size: 12px
+      &-product
+        .tar
+          width: 250px
+      &__caption
+        width: 250px
+
+@media ( max-width: 1024px )
+  .main
+    &-text
+      padding: 40px 0 40px 0
+  .container
+    max-width: 994px
+
+@media ( max-width: 953px )
+  .main
+    padding-bottom: 30px
+    &-text
+      flex-direction: column
+
+@media ( max-width: 768px )
+  .container
+    max-width: 728px
+    padding-right: 20px
+    padding-left: 20px
+  .main
+    &-text
+      padding: 40px 0 27px 0
+  .button
+    &-prev,
+    &-next
+      display: none
+
+@media ( max-width: 425px )
+  .carousel-indicators
+    display: none
+
+  .container
+    max-width: 385px
+  .main
+    .carousel
+      &-card
+        height: 550px
+
+@media ( max-width: 325px )
+  .container
+    max-width: 285px
+    padding-right: 20px
+    padding-left: 20px
+
+  .main
+    align-items: flex-start
+    .carousel
+      &-card
+        width: 260px
+        height: 441px
+    &-text
+      padding: 40px 0 27px 0
+    &__txt
+      font-size: 14px
+      line-height: 22px
+      &-active
+        font-size: 18px
+    .card
+      &-product
+        .tar
+          width: 200px
+      &__caption
+        margin-bottom: 15px
+        width: 220px
+      &__price
+        margin-bottom: 20px
+      &-menu
+        margin: 0 20px 20px 20px
+        flex-direction: column
+        justify-content: center
+      &-amount
+        display: none
+      &-cart
+        &__btn
+          padding: 15px 5px 15px 20px
+          font-size: 14px
