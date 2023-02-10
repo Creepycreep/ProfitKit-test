@@ -1,27 +1,30 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-  let plus = document.querySelectorAll('.btn-plus'),
-    min = document.querySelectorAll('.btn-min');
+  let btn = document.querySelectorAll('.carousel');
 
-  plus.forEach((plus) => {
-    plus.addEventListener('click', () => {
-      let amount = plus.previousElementSibling,
-        count = +amount.innerHTML;
-      if (amount.innerHTML < 99) {
-        amount.innerHTML = count + 1;
+  btn.forEach((btn) => {
+    btn.addEventListener(('click'), (e) => {
+      if (e.target && e.target.classList.contains('btn-plus')) {
+        let amount = e.target.previousElementSibling,
+          count = +amount.innerHTML;
+        if (amount.innerHTML < 99) {
+          amount.innerHTML = count + 1;
+        }
+
       }
+
+      if (e.target && e.target.classList.contains('btn-min')) {
+        let amount = e.target.nextElementSibling,
+          count = +amount.innerHTML;
+        if (amount.innerHTML >= 1) {
+          amount.innerHTML = count - 1;
+        }
+      }
+
     });
+
   });
 
-  min.forEach((min) => {
-    min.addEventListener('click', () => {
-      let amount = min.nextElementSibling,
-        count = +amount.innerHTML;
-      if (amount.innerHTML >= 1) {
-        amount.innerHTML = count - 1;
-      }
-    });
-  });
 
 
   // slider
